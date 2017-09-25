@@ -3,3 +3,4 @@ project(PCSC-Exercises)
 
 add_subdirectory(work)
 add_subdirectory(solutions)
+
