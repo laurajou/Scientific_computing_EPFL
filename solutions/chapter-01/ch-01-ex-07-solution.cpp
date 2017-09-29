@@ -8,7 +8,7 @@
  */
 
 int main(int argc, char *argv[]) {
-  /* Trying to modify and constant variable; uncomment the following lines
+  /* Trying to modify a constant variable; uncomment the following lines
    * and recompile to see the error
    */
   // const int var1 = 0;
