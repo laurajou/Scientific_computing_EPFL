@@ -158,7 +158,8 @@ void or_condition() {
     // One or both conditions have been met
     y = 10.0;
   } else {
-    // Neither condition has been met: y<=q and i==1
+    // Neither condition has been met:
+    // y<=q and i==1
     y = -10.0;
   }
 }
@@ -218,7 +219,8 @@ void scalar_product() {
 
   double vector1[2], vector2[2];
 
-  // Note that the indices of an array start at 0, not at 1!
+  // The indices of an array start at 0, not at 1!
+
   vector1[0] = 0.5;
   vector1[1] = -2.3;
   vector2[0] = 34.2;
@@ -227,6 +229,69 @@ void scalar_product() {
 
   for (int i = 0; i < 2; i++) {
     scalar_product += vector1[i] * vector2[i];
+  }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void tip1() {
+
+  double x = 2.0;
+  for (int i = 0; i < 5; i++)
+    ;
+  {
+    x *= 2.0;
+    std::cout << "x = " << x << "\n";
+  }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void tip2() {
+
+  int x;
+  x == 2 + 2;
+  // This erroneous line has no effect
+  // After testing x against the value 4, the true/false
+  // answer is discarded.
+  x = 4; // This is correct
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void tip3() {
+
+  int x;
+  if (x = 4) {
+    x = 6;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void tip4() {
+
+  double max = 0.0;
+  int count = 0;
+  double positive_numbers[4] = {1.0, 5.65, 42.0, 0.01};
+
+  while (count < 4) {
+    if (positive_numbers[count] > max) {
+      max = positive_numbers[count];
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void tip5() {
+
+  double p, q;
+  double tolerance = 1.0e-8;
+  int k;
+
+  if (std::fabs(p - q) < tolerance) {
+    k = 0;
   }
 }
 
@@ -249,4 +314,9 @@ int main(int argc, char **argv) {
   do_while();
   for_loops();
   scalar_product();
+  tip1();
+  tip2();
+  tip3();
+  tip4();
+  tip5();
 }
