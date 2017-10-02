@@ -23,4 +23,4 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-int get_size() { return 20; }
+int get_size() { return 30; }
