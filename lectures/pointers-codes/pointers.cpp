@@ -5,6 +5,29 @@
 
 //////////////////////////////////////////////////////////////////////
 
+void two_variables() {
+  int x = 1;
+  int y = 2;
+
+  std::cout << &x << "\n";
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void dereferencing() {
+  int y = 3;
+  int *p_x = &y;
+
+  std::cout << "y = " << y << "\n";
+
+  // This changes the value of y
+  *p_x = 1;
+
+  std::cout << "y = " << y << "\n";
+}
+
+//////////////////////////////////////////////////////////////////////
+
 void two_variables_question() {
   int x = 1;
   int y = 2;
@@ -15,13 +38,13 @@ void two_variables_question() {
 //////////////////////////////////////////////////////////////////////
 
 void unallocated_memory_access() {
-  // p_x stores the address of a double
+  // p_x stores the address of a int
   // not yet specified
-  double *p_x;
+  int *p_x;
 
   // trying to assign 1.0 in an unspecified
   // memory location
-  *p_x = 1.0;
+  *p_x = 1;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -100,6 +123,8 @@ void safe_alloc() {
 //////////////////////////////////////////////////////////////////////
 
 int main(int argc, char **argv) {
+  two_variables();
+  dereferencing();
   two_variables_question();
   unallocated_memory_access();
   dynamic_allocation();
