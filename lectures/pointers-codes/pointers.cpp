@@ -5,56 +5,11 @@
 
 //////////////////////////////////////////////////////////////////////
 
-void two_variables() {
+void two_variables_question() {
   int x = 1;
   int y = 2;
+  *(&y + 1) = 3;
   std::cout << &x << "\n";
-}
-
-//////////////////////////////////////////////////////////////////////
-
-void get_address() {
-  int total_sum = 10;
-  std::cout << &total_sum << "\n";
-}
-
-//////////////////////////////////////////////////////////////////////
-
-void pointers_declaration() {
-  double *p_x;
-  std::cout << p_x << std::endl;
-}
-
-//////////////////////////////////////////////////////////////////////
-
-void pointer_usage_example() {
-  // x stores a double precision number
-  double x = 3;
-  // p_x stores the address of a double
-  double *p_x = &x;
-
-  std::cout << p_x << std::endl;
-}
-
-//////////////////////////////////////////////////////////////////////
-
-void char_array_and_pointers() {
-  char name[250] = "yopla";
-  char *ptr = name;
-}
-
-//////////////////////////////////////////////////////////////////////
-
-void dereferencing() {
-  double y = 3.0;
-  double *p_x = &y;
-
-  std::cout << "y = " << y << "\n";
-
-  // This changes the value of y
-  *p_x = 1.0;
-
-  std::cout << "y = " << y << "\n";
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -145,12 +100,7 @@ void safe_alloc() {
 //////////////////////////////////////////////////////////////////////
 
 int main(int argc, char **argv) {
-  two_variables();
-  get_address();
-  pointers_declaration();
-  pointer_usage_example();
-  char_array_and_pointers();
-  dereferencing();
+  two_variables_question();
   unallocated_memory_access();
   dynamic_allocation();
   dynamic_allocation_array();
