@@ -3,7 +3,7 @@ class B;
 class A {
 
 private:
-  friend B;
+  friend class B;
   int secret;
 };
 

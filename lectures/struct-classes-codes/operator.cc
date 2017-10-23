@@ -1,3 +1,5 @@
+#include <iostream>
+
 class A {
 public:
   int operator[](int i) {

@@ -1,4 +1,4 @@
-#include "planet.hh"
+#include "planet3.hh"
 
 Planet::Planet(const Planet &p) {
 
@@ -10,3 +10,4 @@ Planet::Planet(const Planet &p) {
   for (int i = 0; i < 3; ++i) {
     coords[i] = p.coords[i];
   }
+}

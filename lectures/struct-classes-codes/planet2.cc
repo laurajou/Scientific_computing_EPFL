@@ -1,4 +1,4 @@
-#include "planet.hh"
+#include "planet2.hh"
 
 void Planet::move(double delta[3]) {
   // DO SOME CODE
