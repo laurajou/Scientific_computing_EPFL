@@ -3,14 +3,14 @@
 #include <string>
 
 struct Exception {
-  Exception(const std::string &mesg);
+  Exception(const std::string &mesg) : mesg(mesg){};
 
   const std::string &what() { return mesg; };
 
   std::string mesg;
 };
 
-double sqrt(double x) {
+double mysqrt(double x) {
   if (x < 0) {
     throw Exception("no negative number sqrt");
   }
@@ -20,7 +20,7 @@ double sqrt(double x) {
 int main(int argc, char **argv) {
 
   try {
-    double res = sqrt(-1);
+    double res = mysqrt(-1);
     std::cout << res << std::endl;
   } catch (Exception &e) {
     std::cout << e.what() << std::endl;
