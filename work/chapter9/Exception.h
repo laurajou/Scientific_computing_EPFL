@@ -3,8 +3,6 @@
 //
 
 
-
-
 #ifndef EXCEPTIONDEF
 #define EXCEPTIONDEF
 #include <string>

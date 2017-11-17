@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "Exception.h"
-//Constructor Exception::Exception(std::string tagString,
 
 Exception::Exception(std::string tagString, std::string probString) {
 
@@ -19,12 +18,12 @@ void Exception::PrintDebug() const {
 Exception::Exception() {}
 
 
-OutOfRangeException::OutOfRangeException(std::string probString) {
-    mTag = "The index is out of range";
-    mProblem = probString;
+OutOfRangeException::OutOfRangeException(std::string tagString) {
+    mTag = tagString;
+    mProblem = "The index is out of range";
 }
 
-FileNotOpenException::FileNotOpenException(std::string probString) {
-    mTag = "The file is not open";
-    mProblem = probString;
+FileNotOpenException::FileNotOpenException(std::string tagString) {
+    mTag = tagString;
+    mProblem = "The file you are trying to access is not open";
 }
