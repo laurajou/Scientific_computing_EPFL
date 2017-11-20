@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.8)
+project(advanced_cmake)
+
+set(CMAKE_CXX_STANDARD 14)
+
+set(SOURCE_FILES main.cpp)
+add_executable(advanced_cmake ${SOURCE_FILES})
+
+
+file(COPY "test.txt" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
+
+include_directories("/usr/include")
+# target_link_libraries(advanced_cmake z)
+# target_link_libraries(advanced_cmake "/complete/path/to/external/liblibrary.so)
+
