@@ -13,3 +13,11 @@ include_directories("/usr/include")
 # target_link_libraries(advanced_cmake z)
 # target_link_libraries(advanced_cmake "/complete/path/to/external/liblibrary.so)
 
+
+# file(COPY "Doxyfile" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
+# find_package(Doxygen)
+# add_custom_target(doc
+#         ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+#         WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+#         COMMENT "Generating API documentation with Doxygen" VERBATIM
+#         )

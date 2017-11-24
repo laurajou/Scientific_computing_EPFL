@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
+#include "super_cool_class.hh"
 
 int main() {
 
