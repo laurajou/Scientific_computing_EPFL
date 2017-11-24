@@ -4,3 +4,4 @@ add_executable(exercise-template exercise-template.cpp chapter8/RainVector.cpp c
 add_subdirectory(chapter7)
 add_subdirectory(chapter8)
 add_subdirectory(chapter9)
+add_subdirectory(chapter10)
